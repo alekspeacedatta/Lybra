@@ -1,6 +1,6 @@
-const Button = ({buttonText}) => {
+const Button = ({buttonText, buttonClass}) => {
   return (
-    <button>{buttonText}</button>
+    <button className={buttonClass}>{buttonText}</button>
   )
 }
 export default Button

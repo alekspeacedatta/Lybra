@@ -3,7 +3,7 @@ import Link from "../atoms/Link"
 const Header = ({headerLinks}) => {
   return (
     <header>
-        <div className="header-content">
+        <div className="header-content section-content">
             <Text text="Lybra" tag="h2"/>
             <nav>
               <ul>

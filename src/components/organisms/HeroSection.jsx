@@ -6,7 +6,7 @@ import heroImage from "../../images/Group 18.png"
 const HeroSection = () => {
   return (
     <div className="hero-section">
-      <div className="hero-content">
+      <div className="hero-content section-content">
         <SectionText 
         tag1="h3"
         tag2="h1"
@@ -16,7 +16,7 @@ const HeroSection = () => {
         text3="Will It be used for your home, your office or perhaps even your home office combo?">
           <div className="input">
             <Input placeholder="+86 700" />
-            <Button buttonText="contact me" />
+            <Button buttonClass="contact-button"  buttonText="contact me" />
           </div>
         </SectionText>
         <Img imgUrl={heroImage} alt="lol" />
