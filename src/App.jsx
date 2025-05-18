@@ -7,13 +7,15 @@ import UsfulInformation from './components/organisms/UsfulInformation'
 import OurTeam from './components/organisms/OurTeam'
 import Publications from './components/organisms/Publications'
 import NewLetter from './components/organisms/NewLetter'
+import Footer from './components/organisms/Footer'
 function App() {
   const headerLinks = [
     {href: "#demos", label: "demos" },
     {href: "#pages", label: "pages" },
     {href: "#elements", label: "elements" },
     {href: "#blog", label: "blog" },
-    {href: "#contac", label: "contact" }
+    {href: "#contact", label: "contact" },
+    {href: "#newsletter", label: "newsletter" }
   ]
   return (
     <>
@@ -25,6 +27,7 @@ function App() {
       <OurTeam/>
       <Publications/>
       <NewLetter/>
+      <Footer/>
     </>
   )
 }

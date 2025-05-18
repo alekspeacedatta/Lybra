@@ -16,7 +16,7 @@ const OurTeam = () => {
       { name: "leron walton", possition: "Chief Analytics Officer", img: img6 },
     ];
   return (
-    <div className="our-team">
+    <div className="our-team" id="blog">
       <div className="our-team-content section-content">
         <SectionText
           tag1="h3"

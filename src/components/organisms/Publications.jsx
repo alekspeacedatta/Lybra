@@ -9,7 +9,7 @@ const Publications = () => {
     {img: img3, date: "10 feb 2018", position: "CEO", heading: "Collection with gift on which until accounts"},
   ]
   return (
-    <div className="publication">
+    <div className="publication" id="contact">
       <div className="publication-content section-content">
         <SectionText
           tag1="h3"

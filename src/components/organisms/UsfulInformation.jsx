@@ -64,7 +64,7 @@ const UsfulInformation = () => {
   }, [openIndex]);
 
   return (
-    <div className="useful-info">
+    <div className="useful-info" id="elements">
       <div className="useful-info-content section-content">
         <SectionText
           tag1="h3"

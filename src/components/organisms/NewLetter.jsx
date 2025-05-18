@@ -3,7 +3,7 @@ import Input from "../atoms/Input"
 import Button from "../atoms/Button"
 const NewLetter = () => {
   return (
-    <div className="newsletter">
+    <div className="newsletter" id="newsletter">
       <div className="newsletter-content section-content">
         <Text tag="h2" text="Subscribe to our newsletter" />
         <div className="input">

@@ -19,11 +19,27 @@
   font-family: calibri;
   src: url("./font/calibri-regular.ttf");
 }
+/* .section-content:hover {
+  transform: scale(1.01);
+  transition: .3s ease-in-out;
+  padding: 10px;
+  border-radius: 20px;
+} */
 *{
+  scroll-behavior: smooth;
   font-family: calibri;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover, li:hover{
+  text-decoration: underline;
+  transition: .3s ease-in-out;
+  transform: scale(1.1);
 }
 .input{
   display: flex;
@@ -34,7 +50,7 @@
     font-size: 18px;
     border: none;
     outline: none;
-    box-shadow: 0px 2px 2px 2px rgba(0,0,0, 16%)
+    box-shadow: -1px 1px 2px 2px rgba(0,0,0, 16%);
   }
   button{
     font-size: var(--fs-plain-text-medium);
@@ -85,17 +101,39 @@
   outline: none;
   border-radius: 0px 5px 5px 0px;
 }
-
+.contact-button:hover{
+  transition: .3s ease-in-out;
+  transform: scale(1.1);
+}
 #root{
   overflow-x: hidden;
 }
+.hide-header {
+  transform: translateY(-100%);
+}
+
+.show-header {
+  transform: translateY(0);
+}
 header{
+  padding-top: 20px;
+  position: fixed;
   padding-bottom: 40px;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  width: 100vw;
   .header-content{
-    padding: 35px 0px;
+    padding: 10px 20px;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: -1px 1px 2px 3px rgba(0,0,0, 16%);
+    border-radius: 20px;
     h2{
       font-size: var(--fs-heading-medium);
       color: var(--text-color);
@@ -142,7 +180,7 @@ header{
           font-size: 18px;
           border: none;
           outline: none;
-          box-shadow: 0px 2px 2px 2px rgba(0,0,0, 16%)
+          box-shadow: -1px 1px 2px 2px rgba(0,0,0, 16%)
         }
         
       }
@@ -274,6 +312,8 @@ header{
         }
       }
       .member:hover{
+        transition: .3s ease-in-out;
+        transform: scale(1.02);
         background: linear-gradient(90deg, var(--gradient-from) 0%, var(--gradient-to) 100%);
         section{
           color: white;
@@ -336,6 +376,64 @@ header{
     h2{
       color: white;
       font-size: var(--fs-plain-text-biggest);
+    }
+  }
+}
+footer{
+  padding-top: 90px;
+  padding-bottom: 90px;
+  .footer-content{
+    display: flex;
+    align-items: flex-start;
+    gap: 127px;
+    h4{
+      font-size: var(--fs-plain-text-medium);
+    }
+    .contact{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .contact-header{
+        width: 160px;
+      }
+      section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .btn-section{
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        button{
+          width: 128px;
+          height: 52px;
+          border: 2px solid #707070;
+          background-color: transparent;
+          cursor: pointer;
+          outline: none;
+        }
+        .btn2{
+          border-radius: 0px 5px 5px 0px ;
+          border-left: none;
+        }
+        .btn{
+          border-radius: 5px 0px 0px 5px ;
+
+        }
+      }
+    }
+    .lists-container{
+      display: flex;
+      align-items: center;
+      gap: 140px;  
+      ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+      }
     }
   }
 }

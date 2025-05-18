@@ -3,7 +3,7 @@ import Button from "../atoms/Button";
 import Img from "../atoms/Img";
 const YouShouldSee = () => {
   return (
-    <div className="you-should-see">
+    <div className="you-should-see" id="pages">
       <div className="you-should-see-content section-content">
         <div className="fake-video"></div>
         <SectionText

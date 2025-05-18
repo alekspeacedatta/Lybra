@@ -1,7 +1,7 @@
 import SectionText from "../molecules/SectionText"
 const LuxurySection = () => {
   return (
-    <div className="luxury-section">
+    <div className="luxury-section" id="demos">
       <div className="luxury-section-content section-content">
         <SectionText
           tag1="h3"
